@@ -53,6 +53,11 @@ export default function HomePage() {
           </code>
         </p>
       </Section>
+      <Section>
+        <p className="sign-font text-center capitalize text-5xl font-bold text-zinc-500">
+          Rawand
+        </p>
+      </Section>
     </div>
   );
 }
@@ -62,13 +67,15 @@ function Section({
   title,
 }: Readonly<{
   children: React.ReactNode;
-  title: string;
+  title?: string;
 }>) {
   return (
     <section className="gap-4 flex flex-col justify-center w-full max-w-7xl mx-auto h-full min-h-dvh [scroll-snap-align:_start] px-4 sm:px-6">
-      <h2 className="font-bold text-2xl md:text-3xl xl:text-4xl text-zinc-900">
-        {title}
-      </h2>
+      {title && (
+        <h2 className="font-bold text-2xl md:text-3xl xl:text-4xl text-zinc-900">
+          {title}
+        </h2>
+      )}
       {children}
     </section>
   );
