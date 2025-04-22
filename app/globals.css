@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @font-face {
   font-family: "Patung";
   src: url("./patung.woff2") format("woff2");
@@ -7,7 +6,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 .sign-font {
   font-family: "Patung";
 }

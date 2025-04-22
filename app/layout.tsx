@@ -21,15 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <body
         className={`${inter.className} antialiased text-2xl font-medium tracking-tight text-zinc-500 bg-zinc-100`}
       >
         {children}
         <Script
-          defer
           src="https://cloud.umami.is/script.js"
           data-website-id="ac902327-521e-4412-99ac-2ff5cce71237"
+          defer
         ></Script>
       </body>
     </html>
